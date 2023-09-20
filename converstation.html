@@ -12,28 +12,54 @@
         }
 
         #btn {
-            position:fixed;
+            position: fixed;
             background-color: blue;
             color: white;
-            right:10%;
-            bottom:10%;
+            right: 10%;
+            bottom: 10%;
             padding: 5%;
             font: 2em jokerman
         }
 
         body {
-            position:relative;
+            position: relative;
             height: 90vh;
             width: 90vw;
-            z-index:-1;
+            z-index: -1;
             background-color: red;
         }
 
-        p {
-            background-color: black;
-            padding: 10%;
-            height: 100px;
-            width: 100px;
+        #char1 {
+            position: relative;
+            background-color: #ffffff;
+            border: 2px solid black;
+            margin: 25%;
+            margin-top: 2.5%;
+            margin-bottom: 2.5%;
+            border-radius: 20px;
+            border-bottom-left-radius: 0px;
+            z-index: 10;
+
+            padding: 3%;
+            height: 50px;
+            width: 250px;
+        }
+
+        #lft,
+        #rgt {
+            position: absolute;
+            background-color: rgba(0, 255, 255, 0.5);
+            height: 100vh;
+            width: 50vw;
+            z-index: 1;
+
+
+
+        }
+
+        #rgt {
+            right: 0%;
+            transform: translate(21%, 0%);
         }
     </style>
 
@@ -41,11 +67,18 @@
 </head>
 
 <body id="cor">
-    <button type="button" onclick="document.body.appendChild(createElement('p'));scrollBottom()" id="btn">click me</button>
+    <div id="lft" onclick="document.body.appendChild(createElement('p'));scrollBottom()"></div>
+    <div id="rgt"></div>
+    <!-- <button type="button"  id="btn">click me</button> -->
     <script>
-     function scrollBottom() {window.scrollTo(0, 99999);}
-if (document.addEventListener) document.addEventListener("DOMContentLoaded", scrollBottom, false)
-else if (window.attachEvent) window.attachEvent("onload", scrollBottom);
+        function scrollBottom() {
+            window.scrollTo(0, 99999);
+        }
+        if (document.addEventListener)
+            document.addEventListener("DOMContentLoaded", scrollBottom, false)
+        else if (window.attachEvent)
+            window.attachEvent("onload", scrollBottom);
+
     </script>
 
 </body>
