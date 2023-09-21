@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEPAGE</title>
+    <!-- ᎥᑎᗪᎥᗩᑎ ᗴᑎᎥǤᗰᗩ -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #SIHLOGO {
+            font: 1.5em bold Arial;
+            margin: .2em;
+            color: orange;
+        }
+
+        #login {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            font: 2em arial;
+            top: 0.2em;
+            right: 0em;
+
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: gray;
+        }
+
+        #GLOGO {
+            position: absolute;
+            right: 0%;
+            top: 20vh;
+            font: 8em bold;
+
+        }
+
+        #about {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 1em;
+            color: red;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        #main {
+            position: absolute;
+            top: 6em;
+            left: 4em;
+
+            width: 10em;
+            height: 10em;
+
+
+        }
+
+        button {
+            margin: .5em;
+            width: 10em;
+            height: auto;
+            font: 3em jokerman;
+            color: green;
+            background-color: burlywood;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        button::after {
+            content: '';
+            position: absolute;
+            left: 1%;
+            width: 1.5em;
+            height: 2em;
+            background-image: url(arrow.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            transform: translate(-50px, 5px);
+
+        }
+
+        ul {
+            list-style: none;
+        }
+    </style>
+
+</head>
+
+<body background="temple5.jpg">
+    <div id="SIHLOGO">SMART INDIA HACKATHON</div>
+    <div id="GLOGO">ᎥᑎᗪᎥᗩᑎ <br>ᗴᑎᎥǤᗰᗩ</div>
+    <div id="main">
+        <ul>
+            <li><BUtton>CONTINUE</BUtton></li>
+            <LI id="n_g"> <button>NEW GAME</button></LI>
+            <LI id="chap"><BUtton>CHAPTER</BUtton></LI>
+            <LI id="seti"><BUTTon>SETTING</BUTTon></LI>
+        </ul>
+    </div>
+    <span id="login">LOGIN <img src="icons8-contacts.svg" alt=""></span>
+    <a id="about" href="#">ABOUT US</a>
+</body>
+
+</html>
